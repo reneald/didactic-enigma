@@ -21,7 +21,7 @@
 
 <body>
     <main>
-        <form>
+        <div>
             <label for="descriptor">Descriptor</label>
             <select id="descriptor">
                 <option value="rugged">Rugged</option>
@@ -34,12 +34,15 @@
             <select id="focus">
                 <option value="controls-beasts">Controls Beasts</option>
             </select>
-            <button onclick="createEmptyCharacter()">Create character!</button>
-        </form>
+        </br>
+            <label for="charName">What is your character's name?</label>
+            <input type="text" id="charName"/>
+            <button onclick="createCharacter()">Create character!</button>
+            </br>
+            <button onclick="showTypes()">Show types</button>
+        </div>
     </main>
     <footer>
-
-
         <p>This product is an independent production and is not affiliated with Monte Cook Games, LLC. It is published
             under the Cypher System Open License, found at <a
                 href="http://csol.montecookgames.com">http://csol.montecookgames.com</a>.</p>
@@ -47,7 +50,6 @@
         <p>CYPHER SYSTEM and its logo are trademarks of Monte Cook Games, LLC in the U.S.A. and other countries. All
             Monte Cook Games characters and character names, and the distinctive likenesses thereof, are trademarks of
             Monte Cook Games, LLC.</p>
-
     </footer>
     <script src="js/scripts.js"></script>
 </body>
